@@ -1,15 +1,23 @@
 % Document information
-\newcommand{\titleinfo}{Zusammenfassung Template}
-\newcommand{\authorinfo}{Name Nachname}
+\newcommand{\titleinfo}{Zusammenfassung RegT1}
+\newcommand{\authorinfo}{Sandro Pedrett}
 \newcommand{\version}{1.0}
-\newcommand{\versioninfo}{FS21}
+\newcommand{\versioninfo}{HS21}
 % Header
 \include{Template/Header}
+
+\newcommand{\script}[1]{\verweisextern{script}{#1}}
+
+% 10 A4 seiten und 2 Bücher
 
 % Document
 \begin{document}
 
-\tableofcontents
-\input{Sections/First Section}
+\input{Sections/Regelkreis}
+\input{Sections/Grundglieder}
+\input{Sections/Regler}
+\input{Sections/Linearisieren}
+\input{Sections/LZI}
+\input{Sections/Anwendungen}
 
 \end{document}
