@@ -1,12 +1,17 @@
 \section{Regler}
 \subsection{Schaltenderegler}
 \subsubsection{Zweipunkte-Regler}\script{64}
-Ein Zweipunktregler ist ein unstetig arbeitender Regler mit zwei Ausgangszuständen. Je nachdem,
-ob der Istwert über oder unter dem Sollwert liegt, wird der erste oder der zweite Ausgangszustand
-eingenommen.
+Ein Zweipunktregler ist ein unstetig arbeitender Regler mit zwei Ausgangszuständen ($a,b$). Je nachdem,
+ob der Ist-Wert über oder unter dem Soll-Wert liegt, wird der erste oder der zweite Ausgangszustand
+eingenommen.~\\
 
-\includegraphics[width=\columnwidth,keepaspectratio=true]{Images/zweipunkte-regler}\\
-Linke Kurve zeigt \textcolor{red}{oberer}, Rechte Kurve \textcolor{green}{untere} Grenze an. Vorteil dieses Reglers, er ist sehr einfach zu implementieren, hat aber keinen stabilen Zustand.
+\noindent Um eine \textbf{Kennlinie} (X-Y-Plot) zu zeichnen, können den Signalen \textcolor{green}{$x(t)$}  \textcolor{red}{$y(t)$} verfolgt und geplotet werden.
+\begin{center}
+	\includegraphics[width=0.3\columnwidth]{Images/kennlinie}
+	\includegraphics[width=0.6\columnwidth]{Images/zweipunkte-regler}
+\end{center}
+
+\noindent Anfang für Beispiel von oben bei $x(t = 0) = 1$ und $y(t = 0) = -0.8$ (roter Punkt), dann $t\rightarrow\infty$. Dabei entsteht eine Hysterkennlinie.
 
 \subsubsection{Dreipunkt-Regler}\script{70}
 Im Gegensatz zum Zweipunktregler gibt es im Dreipunktregler eine Ruhelage. Dies ist eine Kompination aus zwei Zweipunktregler.\\

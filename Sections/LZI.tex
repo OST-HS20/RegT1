@@ -1,7 +1,15 @@
 \section{Nichtlinearität \& Zeitinvariant}
-\todo{Woche 11}
+
 \subsection{Linearität}
-Linear bedeutet, dass im \textbf{Zeitbereich} ein Faktor $\lambda$ auch eine diesen am Ausgangssignal vorliegt, zudem muss die Gerade durch denn \underline{Nullpunkt}! Im \textbf{Frequenzbereich}, muss Ein/-Ausgangssignal gleiche Frequenz haben!
+Wenn Linearität gilt, kann der Eingang $u$ und der Ausgang $y$ superponiert werden.
+\begin{align*}
+	y_A(t) &= f(u_A(t))  \\
+	y_B(t) &= f(u_B(t))  \\ \\
+	f(\underbrace{\lambda_A\cdot u_A(t) + \lambda_B\cdot u_B(t)}_{u_{tot}}) &\eqi \lambda_A\cdot y_A(t) + \lambda_B\cdot y_B(t)) = y_{tot}
+\end{align*}
+Linear bedeutet daher, dass wenn im \textbf{Zeitbereich} ein Faktor $\lambda$ am Eingang anliegt, dieser auch am Ausgang sein muss. Streng Linear bedeutet weiterhin, dass die Gerade durch denn \underline{Nullpunkt} geht!\script{76}
+Im \textbf{Frequenzbereich}, muss Ein/-Ausgangssignal gleiche Frequenz haben!
 
 \subsection{Hysterese}
 Um zu entscheiden, ob eine echter Hystereseeffekt (zB dirch Magnetisierung) oder eine Folge der Trägheit des Systems (dynamisch, Tiefpass) ist, kann die Rampe Langsamer oder schneller abgefahren werden. Ist die Hysterese \textit{echte} wird sich die Kennlinie dadurch nicht stark verändern. Im anderen Fall ist die Breite der Hysterese etwa proportional zur Steigung der Rampenfunktion $u(t)$
+
